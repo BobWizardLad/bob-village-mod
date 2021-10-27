@@ -2,7 +2,10 @@ package com.example.examplemod.registry;
 
 import com.example.examplemod.ExampleMod;
 import com.example.examplemod.Reference;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -18,6 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> REGISTER = DeferredRegister.create(ForgeRegistries.BLOCKS, Reference.MOD_ID);
 
     // Mod Blocks
+    public static final RegistryObject<Block> SINK = register("sink", new Block(AbstractBlock.Properties.of(Material.STONE)));
 
     // Registry
     private static RegistryObject<Block> register(String name, Block block) {

@@ -2,8 +2,6 @@ package com.example.examplemod;
 
 import com.example.examplemod.registry.ModBlocks;
 import com.example.examplemod.registry.ModItems;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
